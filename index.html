@@ -198,14 +198,15 @@
     color:#8a7548;font-size:.78rem;font-weight:600;text-align:center;padding:10px;
   }
 
-  /* ---------- WOCHENPLAN ---------- */
-  .week{background:var(--yellow);}
-  .week h2{text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;margin-bottom:28px;}
-  .week-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
-  .week-card{background:var(--white);border-radius:14px;padding:16px 14px;min-height:130px;}
-  .week-card.accent{background:var(--red);color:var(--white);}
-  .week-card .day{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1rem;margin-bottom:8px;}
-  .week-card .desc{font-size:.8rem;}
+   /* ---------- WIE ICH ARBEITE ---------- */
+  .work{background:var(--yellow);}
+  .work h2{text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;margin-bottom:28px;}
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .work-card{background:var(--white);border-radius:14px;padding:20px 18px;min-height:150px;}
+  .work-card.accent{background:var(--red);color:var(--white);}
+  .work-card .work-title{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.02rem;margin-bottom:8px;}
+  .work-card .work-desc{font-size:.85rem;line-height:1.45;}
+  @media (max-width:760px){.work-grid{grid-template-columns:1fr;}}
 
   /* ---------- DETAIL 100-TAGE ---------- */
   .plan-detail h2{text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;}
@@ -420,30 +421,34 @@
     </div>
   </section>
 
-  <!-- WOCHENPLAN -->
-  <section class="week">
+    <!-- WIE ICH ARBEITE -->
+  <section class="work">
     <div class="wrap">
-      <h2>Mein typischer Wochenplan</h2>
-      <div class="week-grid">
-        <div class="week-card">
-          <div class="day">Mo</div>
-          <div class="desc">Planung · Pipeline · Team-Check-in</div>
+      <h2>Wie ich arbeite: präsent, strukturiert, umsetzungsstark</h2>
+      <div class="work-grid">
+        <div class="work-card">
+          <div class="work-title">Besuchsplanung nach Potenzial</div>
+          <div class="work-desc">Ich priorisiere Märkte nach Umsatz, Entwicklungspotenzial, Entfernung und aktuellem Handlungsbedarf – mit hoher Präsenz und konsequenter POS-Betreuung.</div>
         </div>
-        <div class="week-card accent">
-          <div class="day">Di</div>
-          <div class="desc">Marktbesuche · POS-Kundenimpulse</div>
+        <div class="work-card accent">
+          <div class="work-title">Klare Ziele für jeden Besuch</div>
+          <div class="work-desc">Jeder Besuch hat ein konkretes Ziel – etwa eine Sortimentslücke zu schließen, die Regalqualität zu verbessern oder eine Zweitplatzierung vorzubereiten.</div>
         </div>
-        <div class="week-card">
-          <div class="day">Mi</div>
-          <div class="desc">Coaching · Analyse · Nachfassen</div>
+        <div class="work-card">
+          <div class="work-title">Konsequente Dokumentation</div>
+          <div class="work-desc">Ich halte Beobachtungen, Fotos, Vereinbarungen und nächste Schritte unmittelbar fest – strukturierte Nachbereitung gehört für mich zur professionellen Kundenbetreuung.</div>
         </div>
-        <div class="week-card accent">
-          <div class="day">Do</div>
-          <div class="desc">Key Accounts · Aktionssteuerung</div>
+        <div class="work-card accent">
+          <div class="work-title">Steuerung über Kennzahlen</div>
+          <div class="work-desc">Ich überprüfe regelmäßig Zielerreichung, Distribution, Verfügbarkeit und Platzierungsqualität und leite daraus konkrete nächste Maßnahmen ab.</div>
         </div>
-        <div class="week-card">
-          <div class="day">Fr</div>
-          <div class="desc">Review · Erfolge teilen · nächste Woche</div>
+        <div class="work-card">
+          <div class="work-title">Umsetzung am POS</div>
+          <div class="work-desc">Ich bleibe nicht bei der Absprache stehen: Wenn eine Maßnahme Unterstützung braucht, packe ich am POS mit an und sorge für eine saubere Umsetzung.</div>
+        </div>
+        <div class="work-card accent">
+          <div class="work-title">Verbindlichkeit im Kundenkontakt</div>
+          <div class="work-desc">Ich bereite Gespräche sorgfältig vor, treffe klare Vereinbarungen und halte deren Umsetzung nach – so entsteht Vertrauen durch zuverlässige Ergebnisse.</div>
         </div>
       </div>
     </div>
