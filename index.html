@@ -118,24 +118,22 @@
   .card-red{background:var(--red);color:var(--white);}
   .card-outline{background:var(--white);border:2px solid var(--red);}
 
-  /* ---------- 100-TAGE BANNER (kurz) ---------- */
-  .plan-banner{background:var(--red);color:var(--white);}
-  .plan-banner h2{text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;margin-bottom:34px;}
-  .plan-track{position:relative;}
-  .plan-track::before{
-    content:"";position:absolute;top:9px;left:0;right:0;height:2px;
-    background:rgba(255,255,255,.35);
+    /* ---------- ERFAHRUNG IM ECHTEN VERTRIEB ---------- */
+  .exp-banner{background:var(--red);color:var(--white);}
+  .exp-banner .exp-intro{text-align:center;max-width:640px;margin:0 auto 40px;}
+  .exp-banner .exp-kicker{font-size:.95rem;opacity:.85;margin-bottom:6px;}
+  .exp-banner h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:600;}
+  .exp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 32px;}
+  .exp-item{display:flex;gap:14px;align-items:flex-start;}
+  .exp-num{
+    flex-shrink:0;width:34px;height:34px;border-radius:50%;
+    background:var(--yellow);color:var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fredoka',sans-serif;font-weight:700;font-size:.95rem;
   }
-  .plan-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  .plan-col{position:relative;padding-top:26px;}
-  .plan-dot{
-    position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;
-    background:var(--yellow);border:3px solid var(--red);
-  }
-  .plan-col .step-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);}
-  .plan-col .step-title{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.1rem;margin:6px 0 12px;}
-  .plan-col ul{margin:0;padding-left:18px;font-size:.88rem;}
-  .plan-col li{margin-bottom:6px;}
+  .exp-item h4{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1rem;margin-bottom:3px;}
+  .exp-item p{margin:0;font-size:.86rem;opacity:.9;}
+  @media (max-width:760px){.exp-grid{grid-template-columns:1fr;}}
 
   /* ---------- PITCH VIDEO ---------- */
   .pitch h2{text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;}
@@ -299,43 +297,53 @@
     </div>
   </section>
 
-  <!-- 100-TAGE BANNER (kurz) -->
-  <section class="plan-banner">
+    <!-- ERFAHRUNG IM ECHTEN VERTRIEB -->
+  <section class="exp-banner">
     <div class="wrap">
-      <h2>Mein 100-Tage-Plan</h2>
-      <div class="plan-track plan-cols">
-        <div class="plan-col">
-          <span class="plan-dot"></span>
-          <div class="step-label">01 · Orientieren</div>
-          <div class="step-title">Tag 1–30: Verstehen &amp; fokussieren</div>
-          <ul>
-            <li>Kunden, Märkte und Kennzahlen strukturiert analysieren</li>
-            <li>Entscheider und Team persönlich kennenlernen</li>
-            <li>Chancen im Gebiet priorisieren</li>
-            <li>Einen gemeinsamen Aktionsplan abstimmen</li>
-          </ul>
+      <div class="exp-intro">
+        <div class="exp-kicker">Ich bringe etwas mit, das man nicht studieren, downloaden oder in einem CRM abbilden kann:</div>
+        <h2>Erfahrung im echten Vertrieb.</h2>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-item">
+          <div class="exp-num">1</div>
+          <div><h4>Menschen lesen</h4><p>Mikro-Signale, Körpersprache, Dynamiken spüren.</p></div>
         </div>
-        <div class="plan-col">
-          <span class="plan-dot"></span>
-          <div class="step-label">02 · Aktivieren</div>
-          <div class="step-title">Tag 31–60: Aktivieren &amp; umsetzen</div>
-          <ul>
-            <li>Fokus-Kunden mit passgenauen Maßnahmen entwickeln</li>
-            <li>POS-Potenziale in konkrete Platzierungen übersetzen</li>
-            <li>Verkaufsteams gezielt coachen und befähigen</li>
-            <li>Fortschritte sichtbar kommunizieren</li>
-          </ul>
+        <div class="exp-item">
+          <div class="exp-num">6</div>
+          <div><h4>Souveränität in Krisen</h4><p>Ruhig bleiben bei Druck und Konflikten.</p></div>
         </div>
-        <div class="plan-col">
-          <span class="plan-dot"></span>
-          <div class="step-label">03 · Skalieren</div>
-          <div class="step-title">Tag 61–100: Stabilisieren &amp; skalieren</div>
-          <ul>
-            <li>Erfolgreiche Routinen im Gebiet verbindlich verankern</li>
-            <li>Ergebnisse, Umsatzhebel und Learnings auswerten</li>
-            <li>Wachstumsplan für die nächsten Quartale vorlegen</li>
-            <li>Kunden- und Teambeziehungen nachhaltig ausbauen</li>
-          </ul>
+        <div class="exp-item">
+          <div class="exp-num">2</div>
+          <div><h4>Beziehungsaufbau</h4><p>Echtes Vertrauen und emotionale Bindung schaffen.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">7</div>
+          <div><h4>Storytelling</h4><p>Nutzen anschaulich vermitteln.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">3</div>
+          <div><h4>Komplexe Verhandlungen</h4><p>Preisgespräche und schwierige Deals souverän führen.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">8</div>
+          <div><h4>Netzwerkpflege</h4><p>Langfristige Beziehungen aktiv knüpfen.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">4</div>
+          <div><h4>Einwände antizipieren</h4><p>Einwände frühzeitig erkennen und entkräften.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">9</div>
+          <div><h4>Strategisches Denken</h4><p>Muster und Marktbewegungen erkennen.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">5</div>
+          <div><h4>Kundenpsychologie</h4><p>Emotionale und soziale Entscheidungsprozesse verstehen.</p></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-num">10</div>
+          <div><h4>Langfristige Kundenbindung</h4><p>Kunden über Jahre hinweg betreuen.</p></div>
         </div>
       </div>
     </div>
