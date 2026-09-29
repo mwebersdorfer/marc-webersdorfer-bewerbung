@@ -228,6 +228,26 @@
   .pd-red .result{border-top-color:rgba(255,255,255,.3);}
   .plan-detail .cta-center{text-align:center;margin-top:30px;}
 
+  /* ---------- WARUM HARIBO ---------- */
+  .why-haribo h2{text-align:center;font-size:clamp(1.5rem,3vw,2rem);font-weight:600;}
+  .why-haribo .lead{max-width:68ch;margin:14px auto 0;font-size:1rem;line-height:1.7;text-align:center;}
+  .why-haribo .lead + .lead{margin-top:14px;}
+  .journey-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px;position:relative;}
+  .journey-card{background:var(--white);border:1.5px solid #EFE3C4;border-radius:14px;padding:18px 16px;text-align:center;}
+  .journey-card.accent{background:var(--red);color:var(--white);border-color:var(--red);}
+  .journey-card .journey-step{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.65;}
+  .journey-card .journey-name{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1rem;margin:6px 0 4px;}
+  .journey-card .journey-tag{font-size:.78rem;font-weight:600;color:var(--red);margin-bottom:8px;}
+  .journey-card.accent .journey-tag{color:var(--yellow);}
+  .journey-card .journey-desc{font-size:.82rem;line-height:1.5;opacity:.9;}
+  .journey-arrow{display:none;}
+  @media (max-width:760px){
+    .journey-grid{grid-template-columns:1fr;}
+  }
+  @media (min-width:761px) and (max-width:1020px){
+    .journey-grid{grid-template-columns:repeat(2,1fr);}
+  }
+
   /* ---------- KONTAKT ---------- */
   .contact{background:var(--red);color:var(--white);text-align:center;}
   .contact h2{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:600;}
@@ -504,6 +524,41 @@
         </div>
       </div>
       
+    </div>
+  </section>
+
+  <!-- WARUM HARIBO -->
+  <section class="why-haribo section-white">
+    <div class="wrap">
+      <h2>Warum HARIBO?</h2>
+      <p class="lead">Meine Vertriebslaufbahn hat mit Pom-Bär und Chio Chips im Lebensmittelhandel begonnen, später kam bei Procter &amp; Gamble Pringles dazu. Mit HARIBO würde sich für mich ein Kreis schließen: zurück zu Lebensmitteln und Snacks – und zu dem, was mir im Vertrieb am meisten liegt: raus zum Kunden, ans Regal, Händler überzeugen und einen Bezirk eigenverantwortlich weiterentwickeln.</p>
+      <p class="lead">Ein zweiter Kreis schließt sich dabei mit: von einem mittelständischen Familienunternehmen über einen wachsenden internationalen Anbieter bis zu einem Weltkonzern habe ich Vertrieb in ganz unterschiedlichen Unternehmenskulturen gelebt. HARIBO ist für mich genau diese Kombination – ein Familienunternehmen mit der Größe, Professionalität und Markenstärke eines Weltkonzerns.</p>
+      <div class="journey-grid">
+        <div class="journey-card">
+          <div class="journey-step">Station 1</div>
+          <div class="journey-name">Wolf Bergstrasse</div>
+          <div class="journey-tag">Familiär &amp; bodenständig</div>
+          <div class="journey-desc">Mittelständisches Familienunternehmen – hier habe ich Vertrieb von der Pike auf gelernt.</div>
+        </div>
+        <div class="journey-card">
+          <div class="journey-step">Station 2</div>
+          <div class="journey-name">Intersnack</div>
+          <div class="journey-tag">Gewachsen &amp; bodenständig geblieben</div>
+          <div class="journey-desc">Größer und internationaler, aber mit spürbar familiärer Prägung – Pom-Bär und Chio als erste starke Marken.</div>
+        </div>
+        <div class="journey-card">
+          <div class="journey-step">Station 3</div>
+          <div class="journey-name">Procter &amp; Gamble</div>
+          <div class="journey-tag">Konzern-Exzellenz</div>
+          <div class="journey-desc">23 Jahre professionelle Vertriebssysteme und Prozesse auf Weltklasse-Niveau mitgestaltet.</div>
+        </div>
+        <div class="journey-card accent">
+          <div class="journey-step">Nächste Station</div>
+          <div class="journey-name">HARIBO</div>
+          <div class="journey-tag">Das Beste aus beidem</div>
+          <div class="journey-desc">Familienunternehmen mit globaler Marke, Marktmacht und Herzblut – für mich die ideale Kombination.</div>
+        </div>
+      </div>
     </div>
   </section>
 
